@@ -13,8 +13,10 @@ go install rsc.io/tmp/gonew@latest
 Create a new project:
 
 ```
-gonew github.com/paganotoni/jumpkit@latest github.com/your/app 
+gonew github.com/paganotoni/jumpkit@v0.0.1 github.com/your/app 
 ```
+
+⚠️ Important: Gonew does not support modules without github.com or similar use github.com/your/app as the pattern for the module path of the newly created project.
 
 ## Running the application
 
