@@ -9,21 +9,21 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-type Server struct {
+type server struct {
 	*chi.Mux
 
 	name string
 }
 
-func (r *Server) Start() error {
+func (r *server) Start() error {
 	fmt.Printf("[info] Starting %v server on port %v\n", r.name, config.Port)
 	return http.ListenAndServe(fmt.Sprintf(":%v", config.Port), r)
 }
 
 // NewServer sets up and returns a new HTTP server with routes mounted
 // for each of the different features in this application.
-func NewServer(name string, options ...Option) *Server {
-	r := &Server{
+func NewServer(name string, options ...Option) *server {
+	r := &server{
 		Mux:  chi.NewRouter(),
 		name: name,
 	}

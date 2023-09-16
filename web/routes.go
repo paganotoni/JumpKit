@@ -14,7 +14,7 @@ import (
 )
 
 // routes sets up all the routes for the application.
-func (r *Server) routes() {
+func (r *server) routes() {
 	// Base middleware
 	r.Use(middleware.Logger)
 	r.Use(middleware.Recoverer)
