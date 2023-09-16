@@ -13,7 +13,7 @@ import (
 // Helpers used by the application to render the templates.
 var helpers = map[string]any{
 	// "form":    form.Form,
-	// "formFor": form.FormFor,
+	// "formFor": tags.FormFor,
 
 	"hasPrefix": func(str, prefix string) bool {
 		return strings.HasPrefix(str, prefix)
