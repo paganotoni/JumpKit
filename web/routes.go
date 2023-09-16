@@ -2,8 +2,8 @@ package web
 
 import (
 	"github.com/paganotoni/jumpkit/config"
-	"github.com/paganotoni/jumpkit/internal/render"
-	"github.com/paganotoni/jumpkit/internal/session"
+	"github.com/paganotoni/jumpkit/core/render"
+	"github.com/paganotoni/jumpkit/core/session"
 
 	"net/http"
 

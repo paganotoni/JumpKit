@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/paganotoni/jumpkit/internal/db"
+	"github.com/paganotoni/jumpkit/core/db"
 )
 
 func main() {

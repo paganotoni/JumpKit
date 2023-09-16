@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 
 	"github.com/paganotoni/jumpkit/config"
-	"github.com/paganotoni/jumpkit/internal/mdfs"
+	"github.com/paganotoni/jumpkit/core/mdfs"
 )
 
 var (

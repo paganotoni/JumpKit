@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/paganotoni/jumpkit/config"
-	"github.com/paganotoni/jumpkit/internal/db"
+	"github.com/paganotoni/jumpkit/core/db"
 	"github.com/paganotoni/jumpkit/postgres"
 
 	"github.com/paganotoni/tailo"

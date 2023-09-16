@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/paganotoni/jumpkit/config"
-	"github.com/paganotoni/jumpkit/internal/gloves"
+	"github.com/paganotoni/jumpkit/core/gloves"
 
 	"github.com/paganotoni/tailo"
 )

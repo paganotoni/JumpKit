@@ -4,8 +4,8 @@ import (
 	"embed"
 
 	"github.com/paganotoni/jumpkit/config"
-	"github.com/paganotoni/jumpkit/internal/mdfs"
-	"github.com/paganotoni/jumpkit/internal/render"
+	"github.com/paganotoni/jumpkit/core/mdfs"
+	"github.com/paganotoni/jumpkit/core/render"
 
 	"github.com/gorilla/sessions"
 )
