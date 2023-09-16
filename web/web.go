@@ -2,9 +2,10 @@ package web
 
 import (
 	"embed"
-	"paganotoni/jumpkit/config"
-	"paganotoni/jumpkit/internal/mdfs"
-	"paganotoni/jumpkit/internal/render"
+
+	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/internal/mdfs"
+	"github.com/paganotoni/jumpkit/internal/render"
 
 	"github.com/gorilla/sessions"
 )

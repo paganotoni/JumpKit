@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"paganotoni/jumpkit/config"
-	"paganotoni/jumpkit/internal/db"
-	"paganotoni/jumpkit/postgres"
+
+	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/internal/db"
+	"github.com/paganotoni/jumpkit/postgres"
 
 	"github.com/paganotoni/tailo"
 

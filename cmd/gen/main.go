@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
-	"paganotoni/jumpkit/internal/db"
+
+	"github.com/paganotoni/jumpkit/internal/db"
 )
 
 func main() {

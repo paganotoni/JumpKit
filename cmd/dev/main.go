@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"paganotoni/jumpkit/config"
-	"paganotoni/jumpkit/internal/gloves"
+
+	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/internal/gloves"
 
 	"github.com/paganotoni/tailo"
 )
