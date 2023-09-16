@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"paganotoni/jumpkit/web"
+
+	"github.com/paganotoni/jumpkit/web"
 )
 
 func main() {

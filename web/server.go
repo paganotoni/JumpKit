@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/config"
 
 	"github.com/go-chi/chi/v5"
 )

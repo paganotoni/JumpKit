@@ -1,12 +1,13 @@
 package web
 
 import (
-	"paganotoni/jumpkit/config"
-	"paganotoni/jumpkit/internal/render"
-	"paganotoni/jumpkit/internal/session"
+	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/internal/render"
+	"github.com/paganotoni/jumpkit/internal/session"
 
 	"net/http"
-	"paganotoni/jumpkit/web/public"
+
+	"github.com/paganotoni/jumpkit/web/public"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"

@@ -3,8 +3,8 @@ package postgres
 import (
 	"embed"
 
-	"paganotoni/jumpkit/config"
-	"paganotoni/jumpkit/internal/db"
+	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/internal/db"
 
 	_ "github.com/lib/pq"
 )

@@ -13,7 +13,7 @@ var (
 	loadOnce sync.Once
 
 	// DatabaseURL to connect and interact with our database instance.
-	DatabaseURL = envOr("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/hiumon?sslmode=disable")
+	DatabaseURL = envOr("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/app?sslmode=disable")
 
 	// Environment in which the application is running, this is useful
 	// to determine the way we'll run the application, for example, if

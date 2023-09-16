@@ -2,9 +2,10 @@ package public
 
 import (
 	"embed"
-	"paganotoni/jumpkit/config"
-	"paganotoni/jumpkit/internal/mdfs"
 	"path/filepath"
+
+	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/internal/mdfs"
 )
 
 var (
