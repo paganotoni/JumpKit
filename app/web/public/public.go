@@ -4,7 +4,7 @@ import (
 	"embed"
 	"path/filepath"
 
-	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/app/config"
 	"github.com/paganotoni/jumpkit/core/mdfs"
 )
 

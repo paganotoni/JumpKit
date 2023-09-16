@@ -3,7 +3,7 @@ package web
 import (
 	"embed"
 
-	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/app/config"
 	"github.com/paganotoni/jumpkit/core/mdfs"
 	"github.com/paganotoni/jumpkit/core/render"
 

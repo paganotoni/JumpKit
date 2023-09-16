@@ -3,7 +3,7 @@ package postgres
 import (
 	"embed"
 
-	"github.com/paganotoni/jumpkit/config"
+	"github.com/paganotoni/jumpkit/app/config"
 	"github.com/paganotoni/jumpkit/core/db"
 
 	_ "github.com/lib/pq"
