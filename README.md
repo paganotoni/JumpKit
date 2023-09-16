@@ -1,6 +1,6 @@
 # 🎒🚀 JumpKit
 
-Jumpkit is a template for building web applications with Go, HTMX and Tailwind CSS. It integrates useful features such as hot code reload and css recompiling.
+JumpKit is a template for building web applications with Go, HTMX and Tailwind CSS. It integrates useful features such as hot code reload and css recompiling.
 
 ## Getting started
 
