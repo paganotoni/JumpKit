@@ -1,19 +1,13 @@
 package web
 
 import (
-	"encoding/base64"
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"net/url"
 	"regexp"
 	"strings"
-	"time"
 
-	"github.com/gobuffalo/plush"
-
-	"github.com/dustin/go-humanize"
-	"github.com/gobuffalo/nulls"
+	"github.com/gobuffalo/plush/v4"
 )
 
 // Helpers used by the application to render the templates.
@@ -48,27 +42,6 @@ var helpers = map[string]any{
 
 		q := u.Query()
 		return q.Get(key) == val
-	},
-
-	"shortMonthWithDate": func(date interface{}) string {
-		switch dd := date.(type) {
-		case time.Time:
-			return dd.Format("Jan 2, 2006")
-		case nulls.Time:
-			if !dd.Valid {
-				return ""
-			}
-
-			return dd.Time.Format("Jan 2, 2006")
-		}
-
-		return ""
-	},
-
-	"formatNumber": func(value int64) string {
-		newValue := humanize.Comma(value)
-
-		return newValue
 	},
 
 	"currentPathWithoutFields": func(fields []interface{}, ctx plush.HelperContext) string {
@@ -144,32 +117,5 @@ var helpers = map[string]any{
 		}
 
 		return inactive
-	},
-
-	"isPicture": func(link string) bool {
-		return strings.Contains(link, ".jpg") || strings.Contains(link, ".png") || strings.Contains(link, ".jpeg")
-	},
-
-	"timeOffDate": func(start, end time.Time) string {
-		duration := end.Sub(start)
-
-		if duration < time.Hour*8 {
-			//time-offs of less than 8 hours
-			return fmt.Sprintf("%s (%s - %s)", start.Format("Jan 2, 2006"), start.Format("03:04 PM"), end.Format("03:04 PM"))
-		} else if duration > time.Hour*24 {
-			//time-offs of more than one day's duration
-			return fmt.Sprintf("%s - %s", start.Format("Jan 2, 2006"), end.Format("Jan 2, 2006"))
-		}
-		//time-offs of duration of 1 day or 8 hours and upwards
-		return start.Format("Jan 2, 2006")
-	},
-
-	"base64JSON": func(data interface{}) string {
-		bjson, err := json.Marshal(data)
-		if err != nil {
-			return ""
-		}
-
-		return base64.StdEncoding.EncodeToString(bjson)
 	},
 }

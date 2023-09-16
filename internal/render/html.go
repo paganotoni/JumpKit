@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/gobuffalo/plush"
+	"github.com/gobuffalo/plush/v4"
 )
 
 var defaultLayout = "layouts/application.html"
